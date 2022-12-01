@@ -1,0 +1,83 @@
+*{
+padding:0px;
+margin: 0px;
+}
+
+.container{
+    margin: 50px;
+    width:900px;
+    height:300px;
+    border: 3px solid green;
+    background-image: src;
+    overflow: hidden;
+    background-image: url("3.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+.img1 img{
+    width:70px;
+    height:120px;
+    position: relative;
+    top:180px;
+    left:100px;
+    
+}
+.animate{   
+    animation: jump 0.5s;
+
+}
+
+@keyframes jump{
+    0%{top:180px}
+    33%{top:50px}
+    66%{top:50px}
+    100%{top:180px}
+}
+
+.img2 img{
+    width:120px;
+    height:120px;
+    position: relative;
+    top:60px;
+    left:800px;
+    animation: move 2s infinite linear;
+}
+
+@keyframes move{
+    0%{left:800px}
+    100%{left:-120px}
+}
+
+
+#score{
+    position: absolute;
+    top:10px;
+    color:red;
+    font-size: 20px;
+    left:370px;
+}
+
+
+#textscore{
+    position:relative;
+    top:0;
+    right:0;
+    color:white;
+}
+
+.tree img{
+    width:120px;
+    height:120px;
+    position: relative;
+    top:0px;
+    left:2500px;
+    animation: move2 5s infinite linear;
+}
+
+
+@keyframes move2{
+    0%{left:2500px}
+    100%{left:-200px}
+}
+
